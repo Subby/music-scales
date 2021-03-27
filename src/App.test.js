@@ -1,8 +1,13 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import findNotesToDisplay from "./services/findNotesToDisplay";
+import {notes, scales} from "./data";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe("correct notes are calculated", () => {
+  test('correct notes are calculated for C Major', async () =>{
+    const rootNote = notes[0];
+    expect(findNotesToDisplay(rootNote, scales[0])).toEqual(["C","D","E","F","G","A","B", "C"]);
+  });
+  test('correct notes are calculated for C Minor', async () =>{
+    const rootNote = notes[0];
+    expect(findNotesToDisplay(rootNote, scales[1])).toEqual(["C","D","D#","F","G","G#","A#", "C"]);
+  });
 });
