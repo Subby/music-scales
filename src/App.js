@@ -2,6 +2,7 @@ import './App.css';
 import React, {useState} from "react";
 import {notes, scales} from "./data";
 import findNotesToDisplay from "./services/findNotesToDisplay";
+import Select from "./components/Select";
 
 function App() {
   const noteOptions = notes.map(note => <option key={note} value={note}>{note}</option>);
@@ -17,17 +18,20 @@ function App() {
   return (
     <div className="App">
       <main>
-        <label htmlFor="rootNote">Root note</label>
-
-        <select name="rootNote" id="rootNote" value={rootNote} onChange={(e) => handleRootNoteChange(e.target.value)}>
-          {noteOptions}
-        </select>
-        <label htmlFor="Scale">Scale</label>
-
-        <select name="scale" id="scale" value={scale.name} onChange={(e) => handleScaleChange(e.target.value)}>
-          {scaleOptions}
-        </select>
-
+        <Select
+            label="Root Note"
+            fieldName = "rootNote"
+            defaulValue = {rootNote}
+            options={noteOptions}
+            onChangeHandler={handleRootNoteChange}
+        />
+        <Select
+            label="Scale"
+            fieldName = "scale"
+            defaulValue = {rootNote.name}
+            options={scaleOptions}
+            onChangeHandler={handleScaleChange}
+        />
         <p>{findNotesToDisplay(rootNote, scale).map(note => <p>{note}</p>)}</p>
       </main>
     </div>
