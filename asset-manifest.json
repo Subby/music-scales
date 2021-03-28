@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/music-scales/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/music-scales/static/js/main.c45bd6ed.chunk.js",
+    "main.js.map": "/music-scales/static/js/main.c45bd6ed.chunk.js.map",
+    "runtime-main.js": "/music-scales/static/js/runtime-main.bd0bb139.js",
+    "runtime-main.js.map": "/music-scales/static/js/runtime-main.bd0bb139.js.map",
+    "static/js/2.eef6d6ad.chunk.js": "/music-scales/static/js/2.eef6d6ad.chunk.js",
+    "static/js/2.eef6d6ad.chunk.js.map": "/music-scales/static/js/2.eef6d6ad.chunk.js.map",
+    "static/js/3.d59d0476.chunk.js": "/music-scales/static/js/3.d59d0476.chunk.js",
+    "static/js/3.d59d0476.chunk.js.map": "/music-scales/static/js/3.d59d0476.chunk.js.map",
+    "index.html": "/music-scales/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/music-scales/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.eef6d6ad.chunk.js.LICENSE.txt": "/music-scales/static/js/2.eef6d6ad.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bd0bb139.js",
+    "static/js/2.eef6d6ad.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.c45bd6ed.chunk.js"
+  ]
+}
