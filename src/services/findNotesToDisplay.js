@@ -8,6 +8,7 @@ const findNotesToDisplay = (rootNote, scale) => {
         noteSum = noteSum + interval;
         calculatedNotes.push(notes[noteSum % notes.length])
     });
+    calculatedNotes.push(rootNote);
     return calculatedNotes;
 };
 
